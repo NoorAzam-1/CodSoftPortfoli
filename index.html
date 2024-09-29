@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Noor Azam</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <nav>
+        <div class="left">
+          <div class="logo">Noor <span>Azam</span></div>
+        </div>
+
+        <div class="right">
+          <ul>
+            <li>
+              <a href="#home"><span>Home</span></a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="left">
+          <h1>Hello, I'm <br /><span>Noor Azam</span></h1>
+          <h2>Front-end Developer</h2>
+          <p>
+            With knowlendge in Web development and design, I offer the best
+            projects resulting in quality work.
+          </p>
+          <a href="#contact" class="btn">Let's Talk</a>
+        </div>
+        <div class="right">
+          <img src="./assets/img/noor1.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="about-content">
+        <img src="./assets/img/noor2.jpg" alt="Noor Azam" />
+        <div class="about-info">
+          <h2>About Me</h2>
+          <p>
+            A Front-end developer enthusiast with a BCA from IGNOU and a diploma
+            in Computer Applications, looking for an internship to utilize my
+            skills in HTML, CSS, JavaScript, and Tailwind CSS. Experienced in
+            developing projects such as a Garbage Value application, Calculator
+            and landing page. Eager to learn and contribute to a team while
+            building practical experience in a professional setting.
+          </p>
+          <h4>
+            Name:
+            <span>Noor Azam</span>
+          </h4>
+          <h4>
+            Place:
+            <span>Delhi</span>
+          </h4>
+          <h4>DOB: <span>05-04-2002</span></h4>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="left">
+        <h2>My Skills</h2>
+        <p>
+          My web development skills include HTML5, CSS, JavaScript,and front-end
+          design. I am proficient in working with Git and version control, which
+          are essential for teamwork and project management. Additionally, I use
+          Tailwind CSS, enhancing my expertise in modern web interface design.
+          Together, these skills make me an effective front-end developer with a
+          deep understanding of various aspects of web design and development.
+        </p>
+        <a href="#projects" class="btn">See Projects</a>
+      </div>
+      <div class="right">
+        <ol start="1">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Tailwind</li>
+          <li>React</li>
+          <li>Git</li>
+          <li>GitHub</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-items">
+        <a href="">
+          <div id="Landing" class="project1">
+            <img src="./assets/img/p1.png" alt="project1" />
+            <h4>Landing Page</h4>
+            <p>
+              My page "Care" focuses on providing students with a seamless
+              experience in finding universities that match their needs. It
+              offers a user-friendly interface, quick access to essential
+              information.
+            </p>
+          </div>
+        </a>
+        <a href="">
+          <div id="Calculator" class="project1">
+            <img src="./assets/img/p2.png" alt="project1" />
+            <h4>Calculator</h4>
+            <p>
+              My calculator is a user-friendly tool designed to provide quick
+              and accurate results for basic mathematical operations. Its clean
+              interface, making calculations efficient for users of all levels.
+            </p>
+          </div>
+        </a>
+        <a href="">
+          <div id="Garbage" class="project1">
+            <img src="./assets/img/p3.png" alt="project1" />
+            <h4>Garbage Value</h4>
+            <p>
+              Garbage Value is a random value at some address in the memory.
+              Whenever you define a variable without initialing it some value,
+              it contains the leftover of the previous program
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- resume Section -->
+    <section id="resume">
+      <h2>My Resume</h2>
+      <div class="resumeContainer">
+        <div id="bachelor" class="resumeItem">
+          <h6>2021-2024</h6>
+          <h5>Bachelor Of Computer Application</h5>
+          <p>INDRA GANDHI NATIONAL OPEN UNIVERSITY</p>
+          <h6>Percentage: 67</h6>
+        </div>
+        <div id="12th" class="resumeItem">
+          <h6>2019-2021</h6>
+          <h5>Intermediate (12<sup>th</sup>)</h5>
+          <p>PREMCHAND HIGH SCHHOL SARARI</p>
+          <h6>Percentage: 70</h6>
+        </div>
+        <div id="10th" class="resumeItem">
+          <h6>2021-2024</h6>
+          <h5>Matric (10<sup>th</sup>)</h5>
+          <p>PREMCHAND HIGH SCHHOL SARARI</p>
+          <h6>Percentage: 77</h6>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="submit-form.php" method="POST">
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+        <a href="#" class="btn">Send Message</a>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Noor Azam</p>
+    </footer>
+  </body>
+</html>
